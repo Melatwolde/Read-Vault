@@ -77,7 +77,7 @@ Read-Vault is a library kind of  management system designed to  manage books, us
 
 The backend API is documented using Swagger. You can access the Swagger documentation at the following URL once the backend server is running:
 
-[Swagger Documentation](http://localhost:3000/api-docs)
+[Swagger Documentation](http://localhost:3000/api)
 
 
 ### Swagger Documentation
