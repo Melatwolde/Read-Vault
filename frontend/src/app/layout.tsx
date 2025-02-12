@@ -66,10 +66,14 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
 const App = ({ children }: { children: React.ReactNode }) => {
   const { isAuthenticated, user } = useAuth();
 
+  function setIsRegistered(arg0: boolean): void {
+    throw new Error('Function not implemented.');
+  }
+
   return (
     <Router>
       <Routes>
-        <Route path="/signup" element={<Signup />} />
+        <Route path="/signup" element={<Signup onRegister={() => setIsRegistered(true)} />} />
         <Route path="/login" element={<LoginPage />} />
         <Route
           path="/*"
